@@ -13,16 +13,19 @@ These instructions will guide you on how to deploy and interact with the MyToken
 Node.js and npm installed on your machine.
 # Installation
 Clone this repository:
-git clone <repository-url>
+``` git clone <repository-url> ```
 Install the project dependencies:
-cd myToken
+```
+ cd myToken
 npm install
+ ```
 # Deploying the Contract
 Edit the hardhat.config.js file and configure the desired network under the networks section.
 
 Deploy the contract to the chosen network using Hardhat:
-
+```
 npx hardhat run scripts/deploy.js --network <network-name>
+```
 The contract address will be logged to the console upon successful deployment.
 
 # Interacting with the Contract
@@ -39,8 +42,9 @@ Users can transfer their tokens to another address using the transfer function.
 
 # Testing
 To run the test suite for the MyToken contract, execute the following command:
-
-# npx hardhat test
+```
+ npx hardhat test
+```
 The test suite includes various scenarios to ensure the proper functioning of the contract.
 
 # License
